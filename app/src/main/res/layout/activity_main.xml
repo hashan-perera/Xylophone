@@ -17,7 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/red"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playC"/>
 
     <Button
         android:id="@+id/d_key"
@@ -27,7 +28,8 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
         android:background="@color/orange"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playD"/>
 
     <Button
         android:id="@+id/e_key"
@@ -37,7 +39,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:background="@color/yellow"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playE"/>
 
     <Button
         android:id="@+id/f_key"
@@ -47,7 +50,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:background="@color/green"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playF"/>
 
     <Button
         android:id="@+id/g_key"
@@ -57,7 +61,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/turquoise"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playG"/>
 
 
     <Button
@@ -68,7 +73,8 @@
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
         android:background="@color/blue"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playA"/>
 
     <Button
         android:id="@+id/b_key"
@@ -78,6 +84,7 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="@color/purple"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:onClick="playB"/>
 
 </LinearLayout>

@@ -4,6 +4,7 @@ import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,11 +36,52 @@ public class MainActivity extends AppCompatActivity {
         mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS, AudioManager.STREAM_MUSIC, 0);
 
         // TODO: Load and get the IDs to identify the sounds
+        mCSoundId = mSoundPool.load(getApplicationContext(), R.raw.note1_c, 1);
+        mDSoundId = mSoundPool.load(getApplicationContext(), R.raw.note2_d, 1);
+        mESoundId = mSoundPool.load(getApplicationContext(), R.raw.note3_e, 1);
+        mFSoundId = mSoundPool.load(getApplicationContext(), R.raw.note4_f, 1);
+        mGSoundId = mSoundPool.load(getApplicationContext(), R.raw.note5_g, 1);
+        mASoundId = mSoundPool.load(getApplicationContext(), R.raw.note6_a, 1);
+        mBSoundId = mSoundPool.load(getApplicationContext(), R.raw.note7_b, 1);
 
 
     }
 
-    // TODO: Add the play methods triggered by the buttons
 
+    // TODO: Add the play methods triggered by the buttons
+    public void playC(View view) {
+        Log.d("XyloPhone", "Red button clicked");
+        mSoundPool.play(mCSoundId, LEFT_VOLUME, RIGHT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playD(View view) {
+        Log.d("XyloPhone", "Orange button clicked");
+        mSoundPool.play(mDSoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playE(View view) {
+        Log.d("XyloPhone", "Yellow button clicked");
+        mSoundPool.play(mESoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playF(View view) {
+        Log.d("XyloPhone", "Green button clicked");
+        mSoundPool.play(mFSoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playG(View view) {
+        Log.d("XyloPhone", "Turquoise button clicked");
+        mSoundPool.play(mGSoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playA(View view) {
+        Log.d("XyloPhone", "Blue button clicked");
+        mSoundPool.play(mASoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
+
+    public void playB(View view) {
+        Log.d("XyloPhone", "Puple button clicked");
+        mSoundPool.play(mBSoundId, RIGHT_VOLUME, LEFT_VOLUME, PRIORITY, NO_LOOP, NORMAL_PLAY_RATE);
+    }
 
 }
